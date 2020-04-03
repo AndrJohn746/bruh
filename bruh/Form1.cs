@@ -24,7 +24,7 @@ namespace bruh
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            Console.WriteLine("yup");
+            Console.WriteLine(e.KeyCode);
 
             switch (scene)
             {
@@ -33,28 +33,30 @@ namespace bruh
                     outputLabel.Text = "\n this kitchen can get pretty crazy, so show your skills, try to keep up and you might get the job!";
                     outputLabel.Text += "\n\n first of all,would you like formal dining or casual dining?";
                     choiceLabel.Text = "press M for formal, and C for casual ";
-                    Console.WriteLine(scene);
+                    
                     if (e.KeyCode == Keys.M)
                     {
                         scene = 1;
                     }
-                    Console.WriteLine(scene);
+                   
                     if (e.KeyCode == Keys.C)
                     {
                         scene = 2;
                     }
-                    Console.WriteLine(scene);
+                  
                     break;
                 case 1:
                     //first scene of formal, matching wine and cheese
                     //another option if they change their mind
                     outputLabel.Text = "Welcome to formal dining. Only for the finest of chefs. Your first task is to pair wine with cheese.";
                     choiceLabel.Text = "press M for chardonay, C for pinot noir, and J if you want casual instead";
-
+                  
+                   
                     if (e.KeyCode == Keys.M)
                     {
                         scene = 3;
                     }
+                   
                     if (e.KeyCode == Keys.C)
                     {
                         scene = 4;
