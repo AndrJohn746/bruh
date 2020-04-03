@@ -28,55 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.startButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.choiceLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // startButton
-            // 
-            this.startButton.Location = new System.Drawing.Point(323, 167);
-            this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(107, 108);
-            this.startButton.TabIndex = 0;
-            this.startButton.Text = "lets go!";
-            this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // outputLabel
             // 
-            this.outputLabel.Location = new System.Drawing.Point(254, 302);
+            this.outputLabel.Location = new System.Drawing.Point(1, 278);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(283, 93);
+            this.outputLabel.Size = new System.Drawing.Size(483, 163);
             this.outputLabel.TabIndex = 1;
             // 
-            // textBox1
+            // choiceLabel
             // 
-            this.textBox1.Location = new System.Drawing.Point(330, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.choiceLabel.Location = new System.Drawing.Point(501, 279);
+            this.choiceLabel.Name = "choiceLabel";
+            this.choiceLabel.Size = new System.Drawing.Size(287, 153);
+            this.choiceLabel.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.choiceLabel);
             this.Controls.Add(this.outputLabel);
-            this.Controls.Add(this.startButton);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Label outputLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label choiceLabel;
     }
 }
 
