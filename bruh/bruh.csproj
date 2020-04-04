@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitchin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scene1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalexcited.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalfancy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formaldissapoint.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalangery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalnice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goodsteak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badsteak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formaljealous.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalwin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\risky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notgoodenough.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
