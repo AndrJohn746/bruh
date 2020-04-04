@@ -73,9 +73,9 @@ namespace bruh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bitchin {
+        internal static System.Drawing.Bitmap casualangryguy {
             get {
-                object obj = ResourceManager.GetObject("bitchin", resourceCulture);
+                object obj = ResourceManager.GetObject("casualangryguy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace bruh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cloud {
+        internal static System.Drawing.Bitmap casualfired {
             get {
-                object obj = ResourceManager.GetObject("cloud", resourceCulture);
+                object obj = ResourceManager.GetObject("casualfired", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,89 @@ namespace bruh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap clouds {
+        internal static System.Drawing.Bitmap casualguychats {
             get {
-                object obj = ResourceManager.GetObject("clouds", resourceCulture);
+                object obj = ResourceManager.GetObject("casualguychats", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualguyenters {
+            get {
+                object obj = ResourceManager.GetObject("casualguyenters", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualguyishere {
+            get {
+                object obj = ResourceManager.GetObject("casualguyishere", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualguyleaves {
+            get {
+                object obj = ResourceManager.GetObject("casualguyleaves", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualhappyguy {
+            get {
+                object obj = ResourceManager.GetObject("casualhappyguy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualpleased {
+            get {
+                object obj = ResourceManager.GetObject("casualpleased", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualsmoke {
+            get {
+                object obj = ResourceManager.GetObject("casualsmoke", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualsouschef {
+            get {
+                object obj = ResourceManager.GetObject("casualsouschef", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap casualyou {
+            get {
+                object obj = ResourceManager.GetObject("casualyou", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -182,9 +262,9 @@ namespace bruh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap goodsteak {
+        internal static System.Drawing.Bitmap formalyouwin {
             get {
-                object obj = ResourceManager.GetObject("goodsteak", resourceCulture);
+                object obj = ResourceManager.GetObject("formalyouwin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -192,9 +272,19 @@ namespace bruh.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kitchin {
+        internal static System.Drawing.Bitmap game_over {
             get {
-                object obj = ResourceManager.GetObject("kitchin", resourceCulture);
+                object obj = ResourceManager.GetObject("game_over", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goodsteak {
+            get {
+                object obj = ResourceManager.GetObject("goodsteak", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

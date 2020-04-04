@@ -36,17 +36,21 @@
             // 
             // outputLabel
             // 
+            this.outputLabel.Font = new System.Drawing.Font("Courier New", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.Location = new System.Drawing.Point(1, 289);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(483, 152);
+            this.outputLabel.Size = new System.Drawing.Size(483, 162);
             this.outputLabel.TabIndex = 1;
+            this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // choiceLabel
             // 
+            this.choiceLabel.Font = new System.Drawing.Font("Courier New", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.choiceLabel.Location = new System.Drawing.Point(490, 289);
             this.choiceLabel.Name = "choiceLabel";
-            this.choiceLabel.Size = new System.Drawing.Size(309, 153);
+            this.choiceLabel.Size = new System.Drawing.Size(309, 162);
             this.choiceLabel.TabIndex = 2;
+            this.choiceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // sceneBox
             // 

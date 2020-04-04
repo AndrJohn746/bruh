@@ -134,5 +134,56 @@
   <ItemGroup>
     <None Include="Resources\notgoodenough.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualsurprised.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game over.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formalyouwin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualyou.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualsouschef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualhappyguy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualangryguy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualfired.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualguyishere.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualguyenters.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualsmoke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualhappy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual pleased.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualpleased.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualyess.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualguychats.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casualguyleaves.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

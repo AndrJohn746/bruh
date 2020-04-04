@@ -51,51 +51,62 @@ namespace bruh
                 else if (scene == 2) { scene = 12; }
                 else if (scene == 11) { scene = 13; }
                 else if (scene == 12) { scene = 15; }
-                else if (scene ==16) { scene = 19; }
+                else if (scene == 16) { scene = 19; }
+            }
 
 
-                else if (e.KeyCode == Keys.C)
+            else if (e.KeyCode == Keys.C)
+            {
+                if (scene == 0) { scene = 2; }
+                else if (scene == 2) { scene = 11; }
+                else if (scene == 1) { scene = 4; }
+                else if (scene == 4) { scene = 6; }
+                else if (scene == 6) { scene = 8; }
+                else if (scene == 28) { scene = 29; }//if they dont want to play again this closes the program
+                else if (scene == 11) { scene = 14; }
+                else if (scene == 12) { scene = 16; }
+                else if (scene == 16) { scene = 18; }
+            }
+
+            else if (e.KeyCode == Keys.J)
+            {
+                if (scene == 1) { scene = 0; }
+                else if (scene == 2) { scene = 0; }
+                else if (scene == 10) { scene = 28; }
+                else if (scene == 3) { scene = 28; }
+                else if (scene == 8) { scene = 28; }
+                else if (scene == 5) { scene = 28; }
+                else if (scene == 9) { scene = 27; }
+                else if (scene == 27) { scene = 28; }
+                else if (scene == 14) { scene = 28; }
+                else if (scene == 13) { scene = 17; }
+                else if (scene == 15) { scene = 28; }
+                else if (scene == 19) { scene = 28; }
+                else if (scene == 18) { scene = 20; }
+                else if (scene == 21) { scene = 28; }
+                else if (scene == 22) { scene = 28; }
+                else if (scene == 23) { scene = 28; }
+                else if (scene == 24) { scene = 26; }
+                else if (scene == 25) { scene = 26; }
+                else if (scene == 26) { scene = 28; }
+                else if (scene == 18)
                 {
-                    if (scene == 0) { scene = 2; }
-                    else if (scene == 2) { scene = 11; }
-                    else if (scene == 1) { scene = 4; }
-                    else if (scene == 4) { scene = 6; }
-                    else if (scene == 6) { scene = 8; }
-                    else if (scene == 28) { scene = 29; }//if they dont want to play again this closes the program
-                    else if (scene == 11) { scene = 14; }
-                    else if (scene == 12) { scene = 16; }
-                    else if (scene == 16) { scene = 18; }
-                }
-
-                else if (e.KeyCode == Keys.J)
-                {
-                    if (scene == 1) { scene = 0; }
-                    else if (scene == 2) { scene = 0; }
-                    else if (scene == 10) { scene = 28; }
-                    else if (scene == 3) { scene = 28; }
-                    else if (scene == 8) { scene = 28; }
-                    else if (scene == 5) { scene = 28; }
-                    else if (scene == 9) { scene = 27; }
-                    else if (scene == 27) { scene = 28; }
-                    else if (scene == 14) { scene = 28; }
-                    else if (scene == 13) { scene = 17; }
-                    else if (scene == 15) { scene = 28; }
-                    else if (scene ==19) { scene = 28; }
-                    else if (scene == 18) { scene = 20; }
-                    else if (scene == 21) { scene = 28; }
-                    else if (scene == 18)
+                    if (randnum <= 3)
                     {
-                        if (randnum <= 3)
-                        {
-                            scene = 21;//he sees the pancakes you lose
-                        }
-                        else
-                        {
-                            scene = 20;//he doesnt see the pancakes
-                        }
+                        scene = 21;//he sees the pancakes you lose
                     }
-
+                    else
+                    {
+                        scene = 20;//he doesnt see the pancakes
+                    }
                 }
+                else if (scene == 25) { scene = 28; }
+
+            }
+            else if (e.KeyCode == Keys.D)
+            {
+                if (scene == 17) { scene = 25; }
+            }
 
                 switch (scene)
                 {
@@ -172,112 +183,132 @@ namespace bruh
 
                         break;
 
-                    //above is all formal
-                    //below is all casual
-
                     case 11:
                         outputLabel.Text = "Incredible. Off to a great start. Wait, do you hear that?";
                         outputLabel.Text += "\n Theres smoke coming from the ther side of the kitchen! A pan was left unattended!";
                         outputLabel.Text += "\n Do you go and help?";
                         choiceLabel.Text = "press M to help and press C to not help";
+                        sceneBox.BackgroundImage = Properties.Resources.casualsmoke;
 
-
-                        break;
+                    break;
                     case 12:
                         outputLabel.Text = "Nicely done. Now, here in the kitchen we take safety very seriously. What percentage of kitchen fires are caused by unattended food?";
                         choiceLabel.Text = "press M for 60%, press C for 80%";
+                        sceneBox.BackgroundImage = Properties.Resources.casualpleased;
 
-
-                        break;
+                    break;
                     case 13:
                         outputLabel.Text = "Great to see you take safety seriously! Oh man.. the boss is here!";
                         choiceLabel.Text = "press J to continue";
-
-                        break;
+                    sceneBox.BackgroundImage = Properties.Resources.casualguyenters;
+                    break;
                     case 14:
-                        outputLabel.Text = "You are fired on the spot for lacking the safety skills required for casual dining. you should be shamed.";
+                        outputLabel.Text = "You are fired on the spot for lacking the safety skills required for casual dining. you should be ashamed.";
                         choiceLabel.Text = "press J to continue";
-
-                        break;
+                    sceneBox.BackgroundImage = Properties.Resources.casualfired;
+                    break;
                     case 15:
                         outputLabel.Text = "Wow, they let you graduate cullinary school with that knowledge? Disgusting. Get out of my kitchin.";
                         choiceLabel.Text = "press J to continue";
-
-                        break;
+                    sceneBox.BackgroundImage = Properties.Resources.notgoodenough;
+                    break;
                     case 16:
                         outputLabel.Text = "Excellent. Next, you must make me eggs benidict. Oh hello Mr Feiri! ";
                         outputLabel.Text += "\n The owner of the establishment, Guy Fieri enters and asks whats going on. He asks that you make HIM the eggs benidict to prove your skills.";
                         outputLabel.Text += "You are familiar with Guy's cullinary expertise, and know his favourite meal. Do you make the eggs bennidict, or make him his favourite meal?";
                         choiceLabel.Text = "press M for eggs benidict, press C for his favourite meal";
+                    sceneBox.BackgroundImage = Properties.Resources.casualguyenters;
 
-
-                        break;
+                    break;
                     case 17:
                         outputLabel.Text = "Hello Guy! Chef Fieri, Sir, today Im testing the skills of this young chef to see if theyre fit for our team.";
-                        outputLabel.Text += "\nGuy glances back at your beautifully cooked pancakes still plated, and is impressed.";
-                        outputLabel.Text += "\nHe is curious to see your full abilities, and ask you make him a meal. What do you make him?";
+                        outputLabel.Text += "\nGuy is impressed by your pancakes and is curious to see your full abilities, and asks you make him a meal. What do you make him?";
                         choiceLabel.Text = "press M for his classic trash can nachos";
-                        choiceLabel.Text += "\npress C for a pulled pork sandwich";
-                        choiceLabel.Text += "\npress J for a stack of those pancakes he liked";
-                        choiceLabel.Text += "\npress D for a traditional pizza from scratch";
+                        choiceLabel.Text = "press C for a pulled pork sandwich";
+                        choiceLabel.Text = "press J for a stack of those pancakes he liked";
+                        choiceLabel.Text = "press D for a traditional pizza from scratch";
+                    sceneBox.BackgroundImage = Properties.Resources.casualguyishere;
 
-                        break;
+                    break;
                     case 18:
                         outputLabel.Text = "Guy is touched by the thoughtful gesture, but it is a well known fact he des not appriciate small, thin food, and your pancakes are only feet away from him";
                         outputLabel.Text += "There is a 30% chance he will see the pancakes, and not be pleased.";
                         choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualguychats;
 
-                        break;
+                    break;
                     case 19:
                         outputLabel.Text = "Guy has had many better eggs benidict in his day. He leaves to go find Americas greatest diners, drive ins and dives.";
                         choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualguyleaves;
 
-                        break;
+                    break;
                     case 20:
                         outputLabel.Text = "Guy did not see your pathetic pancakes! Whew.";
                         outputLabel.Text += "\n You are hired on the spot, and he makes you his sous chef!";
                         choiceLabel.Text = "press J to continue";
-                        //you win
-                        break;
+                    sceneBox.BackgroundImage = Properties.Resources.casualsouschef;
+                    break;
                     case 21:
                         outputLabel.Text = "Guy saw your pancakes, and cut the cord.";
                         choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualangryguy;
 
-                        break;
+                    break;
                     case 22:
-                        break;
+                        outputLabel.Text = "Guy is insulted at your petty attempt to recreate his meal. He asks you to leave.";
+                        choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualangryguy;
+
+                    break;
                     case 23:
-                        break;
+                        outputLabel.Text = "Guy has had many better sandwiches, and tells you to pursue another career.";
+                        choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualangryguy;
+
+                    break;
                     case 24:
-                        break;
+                        outputLabel.Text = "Guy is reminded of his childhood, filled with glee. ";
+                        choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualhappyguy;
+
+                    break;
                     case 25:
-                        break;
+                        outputLabel.Text = "Guy is almost moved to tears by the authenticity of the pizza.";
+                        choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualhappyguy;
+
+                    break;
                     case 26:
-                        break;
+                        //formal winning scene 
+                        outputLabel.Text = "Guy reaches for your hand and asks if you would like to co-own his restaurant with him.";
+                        choiceLabel.Text = "press J to continue";
+                    sceneBox.BackgroundImage = Properties.Resources.casualhappyguy;
+
+                    break;
                     case 27:
                         //formal you win scene
                         outputLabel.Text = "Congratulations, Youve won Formal Dining and have become not only an employee, but head chef!";
                         choiceLabel.Text = "press J to continue";
-                        //needs win image
+                    sceneBox.BackgroundImage = Properties.Resources.formalyouwin;
 
-                        break;
+                    break;
                     case 28:
-                        //ur ded scene
-                        outputLabel.Text = "Game Over! Would you like to play again?";
-                        choiceLabel.Text = "press M for yes and C for no";
-                        //needs win image
+                        //game over
+                         outputLabel.Text = "Game Over! Would you like to play again?";
+                         choiceLabel.Text = "press M for yes and C for no";
+                    sceneBox.BackgroundImage = Properties.Resources.game_over;
 
-                        break;
+                    break;
                     case 29:
-                        //goodbye
-                        outputLabel.Text = "Thanks for playing! Happy cooking!";
-                        choiceLabel.Text = "";
-                        //needs thanks image
-
-                        Close();
+                         //goodbye
+                         Close();
                         break;
                 }
-            }
+            
         }
+
     }
 }
+
+
