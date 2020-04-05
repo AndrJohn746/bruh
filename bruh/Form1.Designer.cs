@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.outputLabel = new System.Windows.Forms.Label();
             this.choiceLabel = new System.Windows.Forms.Label();
             this.sceneBox = new System.Windows.Forms.PictureBox();
@@ -37,7 +38,7 @@
             // outputLabel
             // 
             this.outputLabel.Font = new System.Drawing.Font("Courier New", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.Location = new System.Drawing.Point(1, 289);
+            this.outputLabel.Location = new System.Drawing.Point(-4, 289);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(483, 162);
             this.outputLabel.TabIndex = 1;
@@ -71,8 +72,9 @@
             this.Controls.Add(this.sceneBox);
             this.Controls.Add(this.choiceLabel);
             this.Controls.Add(this.outputLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "The Bitchin Kitchen";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.sceneBox)).EndInit();
             this.ResumeLayout(false);

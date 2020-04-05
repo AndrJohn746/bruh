@@ -22,12 +22,12 @@ namespace bruh
         {
             InitializeComponent();
             scene = 0;
-            outputLabel.Text = "Welcome to the Bitchin Kitchin! press any key to start.";
+            outputLabel.Text = "Welcome to the Bitchin Kitchen! press any key to start.";
             sceneBox.BackgroundImage = Properties.Resources.scene0;
             SoundPlayer player = new SoundPlayer(Properties.Resources.chatter);
             player.Play();
-            randomNum = rng.Next(1, 7);
-            randnum = rng.Next(1, 11);
+            randomNum = rng.Next(1, 7);//for the random outcome of the steak
+            randnum = rng.Next(1, 11);//for the random outcome of the pancake scene 
 
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -37,7 +37,7 @@ namespace bruh
                 if (scene == 0) { scene = 1; }
                 else if (scene == 1) { scene = 3; }
                 else if (scene == 4) { scene = 5; }
-                else if (scene == 6) { scene = 7; }//determines outcome, if your steak is cooked well or not
+                else if (scene == 6) { scene = 7; }
                 else if (scene == 28) { scene = 0; } //if they want to play again this takes them to the first scene
                 else if (scene == 2) { scene = 12; }
                 else if (scene == 11) { scene = 13; }
@@ -64,7 +64,7 @@ namespace bruh
             {
                 if (scene == 1) { scene = 0; }
                 else if (scene == 2) { scene = 0; }
-                else if (scene == 10) { scene = 28; }
+                else if (scene == 10) { scene = 28; }//all of these that go to scene 28 are just the explination scenes for why you lost, then the play again scene 
                 else if (scene == 3) { scene = 28; }
                 else if (scene == 8) { scene = 28; }
                 else if (scene == 5) { scene = 28; }
@@ -95,7 +95,7 @@ namespace bruh
                 }
                 else if (scene == 25) { scene = 28; }
                 else if (scene == 17) { scene = 24; }
-                else if (scene == 7)
+                else if (scene == 7)//determines outcome, weather steak is cookoed well or not
                 {
                     
                    if (randomNum == 6)
@@ -139,13 +139,14 @@ namespace bruh
                         //first scene of casual, making pancakes
                         //another option if they change their mind
                         outputLabel.Text = "Welcome to casual dining! were looking for the great cooks and even better food! ";
-                        outputLabel.Text += "\n First of all, lets see how you made a good classic pancake. ";
+                        outputLabel.Text += "\n First of all, lets see how you make a good classic pancake. ";
                         choiceLabel.Text = "press M for small and thin, C for large and thick, and J if you want formal instead";
                         sceneBox.BackgroundImage = Properties.Resources.scene0;
                         SoundPlayer player2 = new SoundPlayer(Properties.Resources.chatterclink);
                         player2.Play();
                     break;
                     case 3:
+                        //wrong choice of wine
                         outputLabel.Text = "hm. A white? with white cheese? That simply will not do. Au Revoir.";
                         sceneBox.BackgroundImage = Properties.Resources.formaldissapoint;
                         SoundPlayer player3 = new SoundPlayer(Properties.Resources.dishclatter);
@@ -153,6 +154,7 @@ namespace bruh
                         choiceLabel.Text = "press J to continue";
                         break;
                     case 4:
+                        //right choice of wine
                         outputLabel.Text = "Excellent choice! Now to test your skills I would like to see you prepare puff pastery.";
                         choiceLabel.Text = "press M for a rolling pin, press C for the food processor";
                         sceneBox.BackgroundImage = Properties.Resources.formalnice;
@@ -160,6 +162,7 @@ namespace bruh
                         playerr.Play();
                     break;
                     case 5:
+                        //wrong choice of pastery tool
                         outputLabel.Text = "The air is squished out of your dough, the pastery is chewy and limp. The chef is disgusted.";
                         sceneBox.BackgroundImage = Properties.Resources.formalfancy;
                         choiceLabel.Text = "press J to continue";
@@ -167,6 +170,7 @@ namespace bruh
                         playerd.Play();
                     break;
                     case 6:
+                        //right choice of pastery tool
                         outputLabel.Text = "Your puff pastery is fluffy and delicious. Your peers eye you jealously. next, you are asked to prepare filet mignon";
                         outputLabel.Text += "will you use the cast iron skillet provided, or ask to use the stone oven instead?";
                         choiceLabel.Text = "press M for the skillet, press C for the stone oven";
@@ -175,6 +179,7 @@ namespace bruh
                         playerdf.Play();
                     break;
                     case 7:
+                        //choose cast iron skillet
                         outputLabel.Text = "Hm, a bold move. You have a one in six chance of the perfect dish. Best of luck.";
                         sceneBox.BackgroundImage = Properties.Resources.risky;
                         choiceLabel.Text = "press J to continue";
@@ -182,6 +187,7 @@ namespace bruh
                         playera.Play();
                     break;
                     case 8:
+                        //choose stone oven
                         outputLabel.Text = "Now thats what I like to see, I like your drive. ";
                         outputLabel.Text += "\n Your filet mignon is the best ive ever had. But alas, its still not good enough. Au Revoir";
                         sceneBox.BackgroundImage = Properties.Resources.formalwin;
@@ -190,6 +196,7 @@ namespace bruh
                         players.Play();
                     break;
                     case 9:
+                        //skillet works
                         outputLabel.Text = "This is the best filet mignon ive ever had. Incredible.";
                         outputLabel.Text += "\n The chef immiedietly hands over full ownership of the restaurant to you!";
                         sceneBox.BackgroundImage = Properties.Resources.goodsteak;
@@ -198,6 +205,7 @@ namespace bruh
                         playerc.Play();
                     break;
                     case 10:
+                        //skillet doesnt work
                         outputLabel.Text = "Your steak is terribly done. You leave out of shame.";
                         sceneBox.BackgroundImage = Properties.Resources.badsteak;
                         choiceLabel.Text = "press J to continue";
@@ -205,7 +213,8 @@ namespace bruh
                         playerv.Play();
                     break;
                     case 11:
-                        outputLabel.Text = "Incredible. Off to a great start. Wait, do you hear that?";
+                        //you choose large pancakes, pan burns
+                        outputLabel.Text = "Incredible. Off to a great start. Wait, do you hear that? ";
                         outputLabel.Text += "\n Theres smoke coming from the ther side of the kitchen! A pan was left unattended!";
                         outputLabel.Text += "\n Do you go and help?";
                         choiceLabel.Text = "press M to help and press C to not help";
@@ -214,6 +223,7 @@ namespace bruh
                         playerb.Play();
                     break;
                     case 12:
+                        //you choose small pancakes
                         outputLabel.Text = "Nicely done. Now, here in the kitchen we take safety very seriously. What percentage of kitchen fires are caused by unattended food?";
                         choiceLabel.Text = "press M for 60%, press C for 80%";
                         sceneBox.BackgroundImage = Properties.Resources.casualpleased;
@@ -221,6 +231,7 @@ namespace bruh
                         playern.Play();
                     break;
                     case 13:
+                        //you choose the correct percentage, Guy arrives
                         outputLabel.Text = "Great to see you take safety seriously! Oh man.. the boss is here!";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualguyenters;
@@ -228,6 +239,7 @@ namespace bruh
                         playerm.Play();
                     break;
                     case 14:
+                        //you dont help the burning pan
                         outputLabel.Text = "You are fired on the spot for lacking the safety skills required for casual dining. you should be ashamed.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualfired;
@@ -235,13 +247,15 @@ namespace bruh
                         playerf.Play();
                     break;
                     case 15:
-                        outputLabel.Text = "Wow, they let you graduate cullinary school with that knowledge? Disgusting. Get out of my kitchin.";
+                        //you choose the wrong percentage
+                        outputLabel.Text = "Wow, they let you graduate cullinary school with that knowledge? Disgusting. Get out of my kitchen.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.notgoodenough;
                         SoundPlayer playert = new SoundPlayer(Properties.Resources.frying);
                         playert.Play();
                     break;
                     case 16:
+                        //guy fieri enters
                         outputLabel.Text = "Excellent. Next, you must make me eggs benidict. Oh hello Mr Feiri! The owner of the establishment, Guy Fieri enters and asks that you make HIM the eggs benidict to prove your skills. ";
                         outputLabel.Text += "You are familiar with Guy's cullinary expertise, and know his favourite meal. Do you make the eggs bennidict, or make him his favourite meal?";
                         choiceLabel.Text = "press M for eggs benidict, press C for his favourite meal";
@@ -250,6 +264,7 @@ namespace bruh
                         playery.Play();
                     break;
                     case 17:
+                        //continued
                         outputLabel.Text = "Hello Guy! Chef Fieri, Sir, today Im testing the skills of this young chef to see if theyre fit for our team.";
                         outputLabel.Text += "\nGuy is impressed by your pancakes and is curious to see your full abilities, and asks you make him a meal. What do you make him?";
                         choiceLabel.Text = "press M for his trash can nachos, press C for pulled pork sandwich, press J for pancakes, press D for pizza";
@@ -258,14 +273,16 @@ namespace bruh
                         playerx.Play();
                     break;
                     case 18:
+                        //continued
                         outputLabel.Text = "Guy is touched by the thoughtful gesture, but it is a well known fact he does not appriciate small, thin food, and your pancakes are only feet away from him";
-                        outputLabel.Text += "There is a 30% chance he will see the pancakes, and not be pleased.";
+                        outputLabel.Text += " There is a 30% chance he will see the pancakes, and not be pleased.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualguychats;
                         SoundPlayer playerz = new SoundPlayer(Properties.Resources.pplsounds);
                         playerz.Play();
                     break;
                     case 19:
+                        //you make eggs benny
                         outputLabel.Text = "Guy has had many better eggs benidict in his day. He leaves to go find Americas greatest diners, drive ins and dives.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualguyleaves;
@@ -273,6 +290,7 @@ namespace bruh
                         playerq.Play();
                     break;
                     case 20:
+                        //guy doesnt see your pancakes
                         outputLabel.Text = "Guy did not see your pathetic pancakes! Whew.";
                         outputLabel.Text += "\n You are hired on the spot, and he makes you his sous chef!";
                         choiceLabel.Text = "press J to continue";
@@ -281,6 +299,7 @@ namespace bruh
                         playerp.Play();
                     break;
                     case 21:
+                        //guy sees your pancakes
                         outputLabel.Text = "Guy saw your pancakes, and cut the cord.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualangryguy;
@@ -288,6 +307,7 @@ namespace bruh
                         player5.Play();
                     break;
                     case 22:
+                        //you choose to make him nachos
                         outputLabel.Text = "Guy is insulted at your petty attempt to recreate his meal. He asks you to leave.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualangryguy;
@@ -295,6 +315,7 @@ namespace bruh
                         player6.Play();
                     break;
                     case 23:
+                        //you choose to make him pulled pork
                         outputLabel.Text = "Guy has had many better sandwiches, and tells you to pursue another career.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualangryguy;
@@ -302,6 +323,7 @@ namespace bruh
                         player0.Play();
                     break;
                     case 24:
+                        //you choose to make him pancakes
                         outputLabel.Text = "Guy is reminded of his childhood, filled with glee. ";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualhappyguy;
@@ -309,6 +331,7 @@ namespace bruh
                         pvlayer.Play();
                     break;
                     case 25:
+                        //you choose to make him pizza
                         outputLabel.Text = "Guy is almost moved to tears by the authenticity of the pizza.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualhappyguy;
@@ -316,6 +339,7 @@ namespace bruh
                         pltayer.Play();
                     break;
                     case 26: 
+                        //guy asks you to be his partner in crime and co own the restaurant
                         outputLabel.Text = "Guy reaches for your hand and asks if you would like to co-own his restaurant with him.";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.casualhappyguy;
@@ -323,6 +347,7 @@ namespace bruh
                         plavyer.Play();
                     break;
                     case 27:
+                        //you win formal dining with your perfect cooked steak
                         outputLabel.Text = "Congratulations, Youve won Formal Dining and have become not only an employee, but head chef!";
                         choiceLabel.Text = "press J to continue";
                         sceneBox.BackgroundImage = Properties.Resources.formalyouwin;
@@ -340,7 +365,7 @@ namespace bruh
                     case 29:
                          //goodbye
                          Close();
-                        break;
+                    break;
                 }           
         }
 
