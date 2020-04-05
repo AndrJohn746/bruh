@@ -185,5 +185,56 @@
   <ItemGroup>
     <None Include="Resources\casualguyleaves.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\463302__hz37__dutch-busy-walla-people-indoors-restaurant-kitchen-sounds.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\458047__quetzalcontla__kitchen-dishes-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\488055__meisben__ambience-restaurant-01.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\485140__jmccaul__french-resteraunt-2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93340__cognito-perceptu__new-orleans-ambience.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\241813__gruenebanane__teig-ausrollen.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79031__labailey__cutting-a-pastry.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24222__starrock__gas-stove-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131553__shaynecantly__sizzling-steak.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73146__boziav__fireplace-wood-burning-rumble-very-close.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\218910__steph-nii__steak-and-shake.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\360800__kupp2__light-footsteps.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73575__lg__cafe-02-090606.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\377734__armoredbaby__diner2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77922__lg__stir-fry-06.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77924__lg__stir-fry-08.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\342368__newagesoup__ambience-bar-restaurant-friday-night-gringos-y-mariachis.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

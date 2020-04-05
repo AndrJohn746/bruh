@@ -154,8 +154,32 @@
   <data name="casualyou" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\casualyou.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chatter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\463302__hz37__dutch-busy-walla-people-indoors-restaurant-kitchen-sounds.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chatter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\73575__lg__cafe-02-090606.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chatterclink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\488055__meisben__ambience-restaurant-01.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chatternoise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\485140__jmccaul__french-resteraunt-2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="cloudz" xml:space="preserve">
     <value />
+  </data>
+  <data name="conversationdiner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\377734__armoredbaby__diner2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cookingsound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\73146__boziav__fireplace-wood-burning-rumble-very-close.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dishclatter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\458047__quetzalcontla__kitchen-dishes-1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="footsteps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\241813__gruenebanane__teig-ausrollen.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="formalangery" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\formalangery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +205,32 @@
   <data name="formalyouwin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\formalyouwin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="frying" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\77924__lg__stir-fry-08.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="game_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game over.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gasstove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24222__starrock__gas-stove-1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="goodsteak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goodsteak.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="musicnoise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\93340__cognito-perceptu__new-orleans-ambience.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="noisydiner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\342368__newagesoup__ambience-bar-restaurant-friday-night-gringos-y-mariachis.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="notgoodenough" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\notgoodenough.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pastrycut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\79031__labailey__cutting-a-pastry.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pplsounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\218910__steph-nii__steak-and-shake.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="risky" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\risky.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -198,5 +240,11 @@
   </data>
   <data name="scene1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scene1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sizzlingsteak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\131553__shaynecantly__sizzling-steak.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stirfry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\77922__lg__stir-fry-06.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
